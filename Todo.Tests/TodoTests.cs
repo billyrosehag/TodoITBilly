@@ -24,5 +24,18 @@ namespace Todo.Tests
             Assert.Equal(expectedDesc, actualDesc);
             Assert.Equal(exptectedId, actualId);
         }
+
+        [Fact]
+        public void GiveExceptionIfNullorWhiteSpaces()
+        {
+
+            string expected = null;
+
+            TodoITBilly.Model.Todo sut = new TodoITBilly.Model.Todo(" ", 0);
+
+            Assert.Equal(expected, sut.Description);
+
+
+        }
     }
 }

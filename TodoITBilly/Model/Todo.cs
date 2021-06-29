@@ -32,7 +32,7 @@ namespace TodoITBilly.Model
         }
         public Todo(string description, int todoId)
         {
-            this.description = description;
+            this.Description = description;
             this.todoId = todoId;
         }
     }
